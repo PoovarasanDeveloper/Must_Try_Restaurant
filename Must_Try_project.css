@@ -22,15 +22,18 @@ h2,
   /* cover the entire image in the background */
   background-position: center;
   height: 100vh;
+  /* this can makes the image is competely fill the entire screen */
 }
 .landing a {
   text-decoration: none;
   color: var(--brown);
-  min-width: 120px;
   padding-bottom: 0.1em;
+  min-width: 120px;
+  /* thiscan pushes if the width extends */
 }
 header {
   display: flex;
+  /* Here this  display: flex; can makes everything will come inline */
   padding: 1em;
   /* text-shadow: 4px 3px 4px rgb(255, 255, 255); */
   flex-wrap: wrap;
@@ -45,17 +48,19 @@ header {
 }
 nav {
   flex: 2;
+  /* here this entire nav bar give flex: 2; */
   display: flex;
   /* then anoher 2 parts were allocated to this nav bar */
   align-items: center;
 }
 nav a {
   flex: 1;
+  /* Here for the each ting inside nav container flex: 1; is given */
   padding: 0.5em;
   /* here inside this nav each one anchor tag equally splits the area  bacause of the flex : 1*/
   min-width: 120px;
   /* to align the element one another to each other wrap that alignments one another for that this s given if the screen exceeds after theis then it wrap one another */
-font-size: x-large;
+  font-size: x-large;
 }
 nav a:hover {
   color: var(--white);
