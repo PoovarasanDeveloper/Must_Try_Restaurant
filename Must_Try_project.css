@@ -1,0 +1,240 @@
+:root {
+  --brown: #995f2f;
+  --white: #f7f5f0;
+  --black: #171717;
+  --olive: #5c5c0d;
+  --caramel: #d46336;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/* Here this can prevent the corrosal effect at the bottom in x axis */
+body,
+h2,
+#location_tag {
+  margin: 0;
+  padding: 0;
+}
+.landing {
+  background-image: url(food_pot.jpg);
+  background-size: cover;
+  /* cover the entire image in the background */
+  background-position: center;
+  height: 100vh;
+}
+.landing a {
+  text-decoration: none;
+  color: var(--brown);
+  min-width: 120px;
+  padding-bottom: 0.1em;
+}
+header {
+  display: flex;
+  padding: 1em;
+  /* text-shadow: 4px 3px 4px rgb(255, 255, 255); */
+  flex-wrap: wrap;
+  /* here this makes the elements wrap if the min-width is given or screen size is adjusted */
+  row-gap: 1em;
+  /* this row gap is given if the screen width is adjusted then every thing aligned as rows */
+}
+#name {
+  flex: 3;
+  /* here in the flex 3 parts were owned by this name  in the entire block line*/
+  font-size: 3em;
+}
+nav {
+  flex: 2;
+  display: flex;
+  /* then anoher 2 parts were allocated to this nav bar */
+  align-items: center;
+}
+nav a {
+  flex: 1;
+  padding: 0.5em;
+  /* here inside this nav each one anchor tag equally splits the area  bacause of the flex : 1*/
+  min-width: 120px;
+  /* to align the element one another to each other wrap that alignments one another for that this s given if the screen exceeds after theis then it wrap one another */
+}
+nav a:hover {
+  color: var(--white);
+}
+a i {
+  margin-right: 0.5em;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  /* used to align everything everyline next to eachother */
+  height: 50vh;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 20px;
+}
+.tagline1 {
+  color: var(--white);
+  font-size: 2rem;
+  -webkit-text-stroke: 0.5px var(--caramel);
+}
+.tagline2,
+.tagline3 {
+  color: var(--white);
+  margin-top: 10px;
+}
+button {
+  background-color: var(--brown);
+  color: var(--white);
+  padding: 0.5em;
+  width: 15vw;
+  /* here vw is gven because if we mnimize it stays inside the padding */
+  min-width: 150px;
+  /* Here this is applied for the smaller screen this button becomes this size at the smaller screen with this minimym width size */
+  border-radius: 7px;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+button:focus {
+  background-color: var(--olive);
+  color: var(--white);
+}
+#menu_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* grid-template-columns: repeat(3, 1fr); here this can makes the column 3 equal parts */
+  /* here this 👆🏾 was modified into this 👉🏾 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
+  color: var(--white);
+  justify-content: center;
+}
+#menu_name {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--white);
+  -webkit-text-stroke: 0.5px var(--brown);
+  padding-top: 1em;
+}
+#menu_container,
+#menu_name {
+  background: var(--black);
+}
+#menu_container th {
+  color: var(--brown);
+  font-size: 1.5rem;
+}
+table {
+  width: 100%;
+  /* here we defining this for expanding itself to achieve responsiveness easily */
+  padding: 1em;
+  /* border: 2px solid var(--white); */
+  border-radius: 10px;
+}
+#staters,
+#main_course,
+#snakes {
+  margin: 2rem;
+}
+#menu_container th {
+  padding-bottom: 1em;
+}
+#menu_container tr {
+  /* here the each row of the tables were converted into flex box */
+  display: table-row;
+  justify-content: center;
+  margin-top: 0.8em;
+}
+#menu_container td:nth-child(1) {
+  /* here each column datas were aligned each paces */
+  flex: 2;
+  justify-self: left;
+  padding: 0.6em 0.5em;
+}
+#menu_container td:nth-child(2) {
+  flex: 1;
+  justify-self: center;
+  padding: 0.6em 0.5em;
+}
+#menu_container td:nth-child(3) {
+  flex: 1;
+  justify-self: right;
+  padding: 0.6em 0.5em;
+}
+#main_course {
+  grid-row: span 2;
+  /* here if the space issue happened then  here this main_course can span at the bottom because it takes maximum space because of two row space it can take due to span*/
+}
+
+#location_tag {
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 2.5rem;
+  -webkit-text-stroke: 0.5px var(--brown);
+  padding-bottom: 0.5em;
+}
+#locations {
+  display: flex;
+  color: var(--white);
+  background-color: var(--black);
+  flex-wrap: wrap;
+  text-align: center;
+}
+div h2 {
+  color: var(--brown);
+  text-align: center;
+  padding-bottom: 0.25em;
+}
+#locations div {
+  flex: 1;
+  padding: 1em;
+  min-width: 220px;
+  /* here flex-wrap: wrap; is given in the location container here there are multiple containers were there so if the min width exists then the container wrap at the bottom thats why min width is given*/
+}
+#copyright {
+  background-color: var(--brown);
+  color: var(--white);
+}
+.social-icons {
+  padding: 30px;
+  background-color: var(--brown);
+  text-align: center;
+}
+.social-icons a {
+  color: #fff;
+  line-height: 30px;
+  font-size: 30px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.social-icons a i {
+  line-height: 30px;
+  font-size: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.social-icons a:hover i {
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
+/* @media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+} */
