@@ -55,6 +55,7 @@ nav a {
   /* here inside this nav each one anchor tag equally splits the area  bacause of the flex : 1*/
   min-width: 120px;
   /* to align the element one another to each other wrap that alignments one another for that this s given if the screen exceeds after theis then it wrap one another */
+font-size: x-large;
 }
 nav a:hover {
   color: var(--white);
