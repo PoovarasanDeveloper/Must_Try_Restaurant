@@ -232,9 +232,3 @@ div h2 {
   transition: all 200ms ease-in;
   transform: scale(1.5);
 }
-/* @media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-} */
